@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FixNest Services | Home</title>
+  <meta name="description" content="Fast, trusted home services. Cleaning, electrical, plumbing, AC and generator maintenance." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"></span>
+      <strong>FixNest</strong>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <button class="icon-btn hamburger" data-menu-btn aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <a class="btn btn-primary" href="booking.html">Book Now</a>
+  </div>
+
+  <div class="container mobile-menu" data-mobile-menu>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">Verified Technicians • Same-Day Service</span>
+      <h1>Professional Home Services, Done Right</h1>
+      <p>Book trusted cleaners, electricians, plumbers, AC and generator technicians in minutes.</p>
+
+      <div class="hero-actions">
+        <a href="booking.html" class="btn btn-primary">Book a Service</a>
+        <a href="services.html" class="btn">View Services</a>
+      </div>
+    </div>
+
+    <aside class="card hero-panel">
+      <img class="service-img" src="assets/images/hero.jpg" alt="Professional home service team">
+      <p class="small">Serving Port Harcourt & surrounding areas</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Popular Services</h2>
+
+    <div class="grid-3">
+      <article class="card service-card">
+        <img class="service-img" src="assets/images/cleaning.jpg" alt="Home cleaning service">
+        <strong>Home Deep Cleaning</strong>
+        <p class="small">Full apartment deep clean.</p>
+        <p class="small">₦45,000 • 4 hrs</p>
+      </article>
+
+      <article class="card service-card">
+        <img class="service-img" src="assets/images/electrical.jpg" alt="Electrical repair service">
+        <strong>Electrical Repairs</strong>
+        <p class="small">Sockets, wiring & fault fixing.</p>
+        <p class="small">₦25,000 • 2 hrs</p>
+      </article>
+
+      <article class="card service-card">
+        <img class="service-img" src="assets/images/ac.jpg" alt="AC servicing">
+        <strong>AC Servicing</strong>
+        <p class="small">Cleaning & performance checks.</p>
+        <p class="small">₦22,000 • 1.5 hrs</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SLIDER -->
+<section class="section">
+  <div class="container">
+    <h2>What customers say</h2>
+    <p class="small">Realistic demo testimonials (slider works).</p>
+
+    <div class="card block" style="position:relative; overflow:hidden;">
+      <div id="tSlide" aria-live="polite">
+        <p class="quote" id="tQuote" style="margin:0 0 10px;"></p>
+        <p class="small" id="tName" style="margin:0;"></p>
+      </div>
+
+      <div style="margin-top:14px; display:flex; gap:10px;">
+        <button class="btn" id="tPrev" type="button">← Prev</button>
+        <button class="btn" id="tNext" type="button">Next →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ ACCORDION -->
+<section class="section" id="faq">
+  <div class="container">
+    <h2>FAQ</h2>
+    <p class="small">Click to expand (accordion + ARIA).</p>
+
+    <div class="card block">
+      <button class="faq-q" type="button" aria-expanded="false">
+        How fast can I get a technician?
+      </button>
+      <div class="faq-a" hidden>
+        Same-day slots are available most days (subject to location and workload).
+      </div>
+
+      <button class="faq-q" type="button" aria-expanded="false">
+        Do you offer weekend service?
+      </button>
+      <div class="faq-a" hidden>
+        Yes. Weekend bookings attract an extra fee.
+      </div>
+
+      <button class="faq-q" type="button" aria-expanded="false">
+        Are your technicians verified?
+      </button>
+      <div class="faq-a" hidden>
+        Yes. We validate identity and basic competence before onboarding.
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>FixNest Services</strong>
+      <p class="small">Reliable home services you can trust.</p>
+    </div>
+    <div>
+      <a href="services.html">Services</a><br/>
+      <a href="booking.html">Booking</a>
+    </div>
+    <div>
+      <span class="small">📞 +234 803 123 4567</span><br/>
+      <span class="small">✉ hello@fixnest.ng</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

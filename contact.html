@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FixNest | Contact</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="brand-mark"></span> FixNest</a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid-2">
+
+    <section class="card block">
+      <h1>About FixNest</h1>
+      <p class="small">Trusted professionals for essential home services—fast, clean, and transparent pricing.</p>
+
+      <div class="grid-2" style="margin-top:12px;">
+        <div class="card block" style="box-shadow:none;">
+          <strong>Jobs completed</strong>
+          <p class="small"><span data-count="1250">0</span>+</p>
+        </div>
+        <div class="card block" style="box-shadow:none;">
+          <strong>Average rating</strong>
+          <p class="small"><span data-count="4.7">0</span></p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top:12px;">📍 Port Harcourt</p>
+      <p class="small">📞 +234 803 123 4567</p>
+      <p class="small">✉ hello@fixnest.ng</p>
+    </section>
+
+    <section class="card form">
+      <h2>Send a Message</h2>
+
+      <div class="field">
+        <label for="cName">Name *</label>
+        <input id="cName" type="text"/>
+        <div class="help" id="cErrName"></div>
+      </div>
+
+      <div class="field">
+        <label for="cEmail">Email *</label>
+        <input id="cEmail" type="email"/>
+        <div class="help" id="cErrEmail"></div>
+      </div>
+
+      <div class="field">
+        <label for="cMsg">Message *</label>
+        <textarea id="cMsg" rows="5"></textarea>
+        <div class="help" id="cErrMsg"></div>
+      </div>
+
+      <button class="btn btn-primary" id="cSend" type="button">Send</button>
+    </section>
+
+  </div>
+</main>
+
+<script src="js/app.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
