@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FixNest | Booking</title>
+  <title>FixNest | Contact</title>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
@@ -19,15 +19,11 @@
         <a href="contact.html">Contact</a>
       </div>
 
-      <div style="display:flex; gap:10px; align-items:center;">
-        <a class="btn" href="services.html">Add services</a>
-
-        <button class="icon-btn hamburger" data-menu-btn aria-label="Open menu" aria-expanded="false" type="button">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </button>
-      </div>
+      <button class="icon-btn hamburger" data-menu-btn aria-label="Open menu" aria-expanded="false" type="button">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
     </nav>
 
     <div class="mobile-menu" data-mobile-menu>
@@ -42,73 +38,54 @@
 <main class="section">
   <div class="container grid-2">
 
-    <section class="card form">
-      <h1>Booking request</h1>
+    <section class="card block">
+      <h1>About FixNest</h1>
+      <p class="small">Trusted professionals for essential home services—fast, clean, and transparent pricing.</p>
 
-      <div class="field">
-        <label for="name">Full Name *</label>
-        <input id="name" type="text" placeholder="Your name"/>
-        <div class="help" id="errName"></div>
-      </div>
-
-      <div class="grid-2">
-        <div class="field">
-          <label for="phone">Phone *</label>
-          <input id="phone" type="tel" placeholder="080... or +234..."/>
-          <div class="help" id="errPhone"></div>
+      <div class="grid-2" style="margin-top:12px;">
+        <div class="card block" style="box-shadow:none;">
+          <strong>Jobs completed</strong>
+          <p class="small"><span data-count="1250">0</span>+</p>
         </div>
-        <div class="field">
-          <label for="email">Email *</label>
-          <input id="email" type="email" placeholder="you@email.com"/>
-          <div class="help" id="errEmail"></div>
+        <div class="card block" style="box-shadow:none;">
+          <strong>Average rating</strong>
+          <p class="small"><span data-count="4.7">0</span></p>
         </div>
       </div>
 
-      <div class="grid-2">
-        <div class="field">
-          <label for="date">Preferred Date *</label>
-          <input id="date" type="date"/>
-          <div class="help" id="errDate"></div>
-        </div>
-        <div class="field">
-          <label for="time">Preferred Time *</label>
-          <input id="time" type="time"/>
-          <div class="help" id="errTime"></div>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="address">Address *</label>
-        <input id="address" type="text" placeholder="Street, landmark..."/>
-        <div class="help" id="errAddress"></div>
-      </div>
-
-      <div class="field">
-        <label>Add-ons</label>
-        <label class="small"><input type="checkbox" id="urgent"> Urgent / same-day (+₦20,000)</label>
-        <label class="small"><input type="checkbox" id="weekend"> Weekend (+₦10,000)</label>
-      </div>
-
-      <button class="btn btn-primary" id="submitBtn" type="button">Submit Request</button>
-      <button class="btn btn-outline" id="clearBtn" type="button" style="margin-top:10px;">Clear booking</button>
+      <p class="small" style="margin-top:12px;">📍 Port Harcourt</p>
+      <p class="small">📞 +234 803 123 4567</p>
+      <p class="small">✉ hello@fixnest.ng</p>
     </section>
 
-    <aside class="card block">
-      <h3>Your booking cart</h3>
-      <div id="cartBox"></div>
+    <section class="card form">
+      <h2>Send a Message</h2>
 
-      <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-        <button class="btn" id="copyBtn" type="button">Copy details</button>
-        <a class="btn btn-primary" id="waBtn" href="#" target="_blank" rel="noopener">Send via WhatsApp</a>
+      <div class="field">
+        <label for="cName">Name *</label>
+        <input id="cName" type="text"/>
+        <div class="help" id="cErrName"></div>
       </div>
 
-      <div id="successBox" style="margin-top:14px;"></div>
-    </aside>
+      <div class="field">
+        <label for="cEmail">Email *</label>
+        <input id="cEmail" type="email"/>
+        <div class="help" id="cErrEmail"></div>
+      </div>
+
+      <div class="field">
+        <label for="cMsg">Message *</label>
+        <textarea id="cMsg" rows="5"></textarea>
+        <div class="help" id="cErrMsg"></div>
+      </div>
+
+      <button class="btn btn-primary" id="cSend" type="button">Send</button>
+    </section>
 
   </div>
 </main>
 
 <script src="js/app.js"></script>
-<script src="js/booking.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>
