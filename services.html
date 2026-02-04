@@ -9,22 +9,41 @@
 <body>
 
 <header class="header">
-  <div class="container nav">
-    <a class="brand" href="index.html"><span class="brand-mark"></span> FixNest</a>
-    <div class="nav-links">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark"></span> FixNest</a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="btn btn-primary" href="booking.html">Go to Booking</a>
+
+        <button class="icon-btn hamburger" data-menu-btn aria-label="Open menu" aria-expanded="false" type="button">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" data-mobile-menu>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="booking.html">Booking</a>
       <a href="contact.html">Contact</a>
     </div>
-    <a class="btn btn-primary" href="booking.html">Go to Booking</a>
   </div>
 </header>
 
 <main class="section">
   <div class="container">
-    <h1>Our Services</h1>
-    <p class="small">Search, filter, sort, and add to booking (saved).</p>
+    <h1>Services</h1>
+    <p class="small">Search, filter, sort, and add to booking.</p>
 
     <div class="card form" style="margin-bottom:16px;">
       <div class="grid-3">
@@ -32,6 +51,7 @@
           <label for="search">Search</label>
           <input id="search" type="text" placeholder="e.g., AC, cleaning, generator" />
         </div>
+
         <div class="field">
           <label for="category">Category</label>
           <select id="category">
@@ -43,6 +63,7 @@
             <option value="Generator">Generator</option>
           </select>
         </div>
+
         <div class="field">
           <label for="sort">Sort</label>
           <select id="sort">
@@ -53,6 +74,7 @@
           </select>
         </div>
       </div>
+
       <p class="small" id="cartHint" style="margin:10px 0 0;"></p>
     </div>
 
